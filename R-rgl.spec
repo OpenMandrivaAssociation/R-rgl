@@ -13,6 +13,7 @@ Requires:         R-stats R-grDevices
 Requires:         R-MASS 
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-stats R-grDevices
 BuildRequires:    R-MASS 
+BuildRequires:    png-devel
 BuildRequires:    mesagl-devel
 BuildRequires:    mesaglu-devel
 %rename R-cran-rgl
