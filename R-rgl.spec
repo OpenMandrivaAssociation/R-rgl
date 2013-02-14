@@ -2,13 +2,13 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          0.92.880
+Version:          0.93.928
 Release:          1
 Summary:          3D visualization device system (OpenGL)
 Group:            Sciences/Mathematics
 License:          GPL
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/%{packname}_%{version}.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/rgl_0.93.928.tar.gz
 Requires:         R-stats R-grDevices 
 Requires:         R-MASS 
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-stats R-grDevices
@@ -48,19 +48,3 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/libs
 %{rlibdir}/%{packname}/textures
 %{rlibdir}/%{packname}/WebGL
-
-
-%changelog
-* Thu Feb 16 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.92.798-1
-+ Revision: 775067
-- Update to latest version
-
-* Thu Feb 16 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.92.794-1
-+ Revision: 774911
-- Update and rebuild with R2spec
-- Update and rebuild with R2spec
-
-* Tue Dec 29 2009 Jérôme Brenier <incubusss@mandriva.org> 0.87-1mdv2010.1
-+ Revision: 483323
-- import R-cran-rgl
-
