@@ -3,7 +3,7 @@
 
 Name:             R-%{packname}
 Version:          0.93.928
-Release:          1
+Release:          2
 Summary:          3D visualization device system (OpenGL)
 Group:            Sciences/Mathematics
 License:          GPL
