@@ -11,11 +11,11 @@ URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/rgl_0.93.991.tar.gz
 Requires:         R-stats R-grDevices 
 Requires:         R-MASS 
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-stats R-grDevices
+BuildRequires:    R-devel Rmath-devel texlive-latex R-stats R-grDevices
 BuildRequires:    R-MASS 
 BuildRequires:    png-devel
-BuildRequires:    mesagl-devel
-BuildRequires:    mesaglu-devel
+BuildRequires:    pkgconfig(gl)
+BuildRequires:    pkgconfig(glu)
 %rename R-cran-rgl
 
 %description
