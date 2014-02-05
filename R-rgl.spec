@@ -2,13 +2,13 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          0.93.991
+Version:          0.93.996
 Release:          1
 Summary:          3D visualization device system (OpenGL)
 Group:            Sciences/Mathematics
 License:          GPL
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/rgl_0.93.991.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/rgl_0.93.996.tar.gz
 Requires:         R-stats R-grDevices 
 Requires:         R-MASS 
 BuildRequires:    R-devel Rmath-devel texlive-latex R-stats R-grDevices
@@ -48,4 +48,5 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/libs
 %{rlibdir}/%{packname}/textures
 %{rlibdir}/%{packname}/WebGL
+
 
